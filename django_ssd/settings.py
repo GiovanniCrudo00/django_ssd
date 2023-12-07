@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
+
+    'records.apps.RecordsConfig',
 ]
 
 MIDDLEWARE = [

@@ -3,4 +3,11 @@
 Repository for the Secure Software Design Django Rest Service
 
 -- TODO --
-Django first configuration
+
+Test custom validators
+
+Test urls
+
+Add authentication and authorization
+
+Test authentication and authorization
