@@ -73,14 +73,11 @@ def test_wrong_record_creation_raises_exception(db, temperature, humidity, wind,
         record.full_clean()
 
 
-# TODO: Missing test for wrong date
 def test_record_wrong_date_raises_exception(db):
-    # record = mixer.blend('records.Record', date='a')
-    # with pytest.raises(ValidationError) as e:
-    #     record.full_clean()
-    #
-    # assert 'value has an invalid format' in str(e.value)
-    assert True
+    with pytest.raises(ValidationError) as e:
+        mixer.blend('records.Record', date='a')
+
+    assert 'value has an invalid format' in str(e.value)
 
 
 # Correct date format: 2023-12-08T22:54:00Z

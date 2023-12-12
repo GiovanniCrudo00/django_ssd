@@ -14,9 +14,7 @@ class Record(models.Model):
     humidity = models.IntegerField(validators=[validate_humidity])
     temperature = models.IntegerField(validators=[validate_temperature])
     wind = models.IntegerField(validators=[validate_wind])
-    date = models.DateTimeField()  # TODO: Check if it works correctly (maybe it's worth to make it string and validate manually)
-    # TODO: Consider using Date of python, immutable class
-    created_at = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField()
     condition = models.CharField(max_length=1, choices=Enumconditions.choices, default=Enumconditions.SUNNY)
 
     def __str__(self):
