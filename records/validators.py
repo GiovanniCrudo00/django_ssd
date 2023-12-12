@@ -13,7 +13,7 @@ def validate_temperature(value: int) -> None:
 
 
 def validate_wind(value: int) -> None:
-    if value < 0 or value > 200:  # TODO: Select the upper bound for the wind
+    if value < 0 or value > 200:
         raise ValidationError('Wind must be between 0 and 200')
 
 

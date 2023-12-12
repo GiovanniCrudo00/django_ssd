@@ -1,4 +1,17 @@
-superadmin:7}%jp&j2Ax8(jnQ
+ROLE
+    USERNAME:PASSWORD
 
-admin-LITroTHeraWaRi/
+
+Superuser:
+    superadmin:7}%jp&j2Ax8(jnQ
+
+Record Editor
+    gibbi:password_123
+
+Normal Users:
+    normal_user:password_123
+
+
+Admin-Page
+    admin-LITroTHeraWaRi/
 
