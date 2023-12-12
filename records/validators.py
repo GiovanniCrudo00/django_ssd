@@ -15,8 +15,3 @@ def validate_temperature(value: int) -> None:
 def validate_wind(value: int) -> None:
     if value < 0 or value > 200:
         raise ValidationError('Wind must be between 0 and 200')
-
-
-def validate_condition(value: int) -> None:
-    if value < 1 or value > 4:
-        raise ValidationError('Condition must be between 1 and 4')

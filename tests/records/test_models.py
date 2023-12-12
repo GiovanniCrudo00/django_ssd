@@ -106,3 +106,6 @@ def test_correct_record_creation(db, temperature, humidity, wind, date, conditio
     assert record_instance.wind == wind
     assert record_instance.date == date
     assert record_instance.condition == condition
+    # Testing now __str__ method
+    assert (str(record) == 'Condition: '+str(condition)+', Humidity: '+str(humidity)+'%, Temperature: '+
+            str(temperature)+' C°, Wind: '+str(wind)+' Km/h, Date: '+str(date))

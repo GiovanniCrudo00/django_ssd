@@ -5,7 +5,7 @@ from records.serializers import RecordSerializer
 
 
 # Create your views here.
-class CustomPermissions(permissions.BasePermission):  # TODO: Missing tests
+class CustomPermissions(permissions.BasePermission):
     def has_permission(self, request, view):
         if request.user.is_authenticated:
             if request.user.is_superuser:  # Allow Read/Write permissions if superuser

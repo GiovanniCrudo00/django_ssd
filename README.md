@@ -6,8 +6,4 @@ PRE-COMMIT HOOK file in .git/hooks/pre-commit
 
 -- TODO --
 
-Test urls
-
-Test authentication and authorization
-
-Review Specs
+[REDACTED]
