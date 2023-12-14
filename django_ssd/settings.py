@@ -64,7 +64,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",  # dev server
-    # add front-end server
+    "http://localhost:3000",  # front end server
 ]
 
 REST_FRAMEWORK = {
